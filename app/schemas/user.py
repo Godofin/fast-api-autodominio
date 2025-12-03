@@ -10,6 +10,7 @@ class UserBase(BaseModel):
     email: EmailStr
     phone: Optional[str] = Field(None, max_length=20)
     role: UserRole
+    profile_photo: Optional[str] = Field(None, max_length=500)
 
 
 class UserCreate(UserBase):
@@ -23,6 +24,7 @@ class UserUpdate(BaseModel):
     email: Optional[EmailStr] = None
     phone: Optional[str] = Field(None, max_length=20)
     password: Optional[str] = Field(None, min_length=6)
+    profile_photo: Optional[str] = Field(None, max_length=500)
 
 
 class UserResponse(UserBase):

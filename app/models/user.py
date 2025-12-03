@@ -22,6 +22,7 @@ class User(Base):
     password_hash = Column(String(255), nullable=False)
     role = Column(Enum(UserRole), nullable=False)
     phone = Column(String(20))
+    profile_photo = Column(String(500))  # Caminho da foto de perfil
     created_at = Column(DateTime, default=datetime.utcnow)
     
     # Relacionamentos

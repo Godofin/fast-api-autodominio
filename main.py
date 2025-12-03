@@ -6,7 +6,10 @@ from app.routes import (
     instructor_profiles_router,
     instructor_availability_router,
     appointments_router,
-    instructor_time_off_router
+    instructor_time_off_router,
+    reviews_router,
+    instructor_approval_router,
+    uploads_router
 )
 from app.config import settings
 
@@ -36,6 +39,9 @@ app.include_router(instructor_profiles_router)
 app.include_router(instructor_availability_router)
 app.include_router(appointments_router)
 app.include_router(instructor_time_off_router)
+app.include_router(reviews_router)
+app.include_router(instructor_approval_router)
+app.include_router(uploads_router)
 
 
 @app.get("/")

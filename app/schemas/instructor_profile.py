@@ -1,7 +1,8 @@
 from pydantic import BaseModel, Field
 from typing import Optional
 from decimal import Decimal
-from app.models.instructor_profile import TransmissionType
+from datetime import datetime
+from app.models.instructor_profile import TransmissionType, ApprovalStatus
 
 
 class InstructorProfileBase(BaseModel):
@@ -32,6 +33,9 @@ class InstructorProfileResponse(InstructorProfileBase):
     """Schema de resposta para InstructorProfile"""
     id: int
     user_id: int
+    approval_status: ApprovalStatus
+    approval_date: Optional[datetime] = None
+    rejection_reason: Optional[str] = None
     
     class Config:
         from_attributes = True

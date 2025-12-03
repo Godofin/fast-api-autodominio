@@ -2,14 +2,22 @@
 
 API REST para conectar instrutores de trânsito credenciados a alunos que buscam aulas avulsas de aperfeiçoamento ou perda de medo.
 
-## 📋 Funcionalidades
+## 📍 Funcionalidades
 
+### Funcionalidades Básicas
 - **Gestão de Usuários**: Cadastro de alunos, instrutores e administradores
 - **Perfis de Instrutores**: Informações detalhadas sobre credenciais, veículo e preços
 - **Disponibilidade**: Gestão de agenda semanal dos instrutores
 - **Agendamentos**: Sistema completo de marcação e gestão de aulas
 - **Exceções de Agenda**: Bloqueio de datas específicas para instrutores
 - **Busca Avançada**: Filtros por localização, tipo de câmbio e preço
+
+### 🆕 Novas Funcionalidades (v2.0)
+- **⭐ Sistema de Avaliações**: Alunos podem avaliar instrutores (1-5 estrelas)
+- **✅ Aprovação de Instrutores**: Sistema de aprovação antes de dar aulas
+- **📸 Upload de Fotos**: Fotos de perfil para usuários
+- **📄 Upload de Documentos**: Instrutores podem enviar CNH, credenciais, etc.
+- **📊 Estatísticas**: Média de avaliações e estatísticas de aprovação
 
 ## 🚀 Como Executar no Windows
 
